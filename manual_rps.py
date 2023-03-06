@@ -13,7 +13,7 @@ def get_user_choice():
     return user_choice
 
 
-def get_winner(user_choice, computer_choice):
+def get_winner(computer_choice, user_choice):
     if user_choice == computer_choice:
         print("It is a tie!")
 
