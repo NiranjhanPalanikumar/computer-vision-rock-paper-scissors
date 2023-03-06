@@ -1,10 +1,7 @@
 import cv2
 from keras.models import load_model
 import numpy as np
-model = load_model('keras_model.h5')
-cap = cv2.VideoCapture(0)  #value = 0 indicates default web camera
-#cap = cv2.VideoCapture(1)  #value = 1 indicates usb web camera 
-data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+import time
 
 
 def get_prediction():
@@ -45,7 +42,7 @@ def get_prediction():
 
     #print(prediction_list)
     #return prediction_list
-    mean_value_last_10_samples = np.mean(full_list[-10:], axis=0)
+    mean_value_last_10_samples = np.mean(prediction_list[-10:], axis=0)
     max_index = np.argmax(mean_value_last_10_samples)
 
     if max_index == 0:
