@@ -13,7 +13,12 @@ After capturing the images and training the model it can be exported as a tensor
 
 Firstly we install all the required dependencies in a newly created environment so that it will not have any affects on the working of other programs. The required denpenencies are listed in the "requirements.txt" file, and you can install all of them together by typing "pip install requirements.txt" in your new environment.
 
-The file "task_4_check_model_works" is a basic code to verify the working of our exported model from Techable Machines. The prediction has the output in the form [[r, p, s, n]], where each variable stands for their respective class [[Rock, Paper, Scissors, Nothing]] and represents the confidence percentage in the video capture. 
+The file "task_4_check_model_works" is a basic code to verify the working of our exported model from Techable Machines. The prediction has the output in the form [[r, p, s, n]], where each variable stands for their respective class [[Rock, Paper, Scissors, Nothing]] and represents the confidence percentage in the video capture.
+
+An example of the result scores:
+![play_rps_function](https://user-images.githubusercontent.com/57700141/224304805-75e001cc-4171-4db1-a04d-fb20d446fe8d.PNG)
+
+This was a 5 round series; where the first and second were won by the user the fourth round ended in a tie and the remaining two were both won by the computer bringing the score to [2-2] ending the series in a tie.
 
 ## manual_rps.py description
 This python file is a program written to get a user choice and select a random option for the computer from the list [Rock, Paper, Scissors] defined through get_computer_choice() and get_user_choice() functions. Another function named get_winner() is defined which takes in the computer_choice and user_choice as inputs and runs a seris of if-else statements to check for the winner.
