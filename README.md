@@ -20,5 +20,15 @@ This python file is a program written to get a user choice and select a random o
 
 Finally, a function play() is executed that simulates the game and prints the winner on the screen.
 
+## camera_rps.py
+This python file is the compiled version of all the algorithms used earlier into methods and attributes of a class for ease of use and better readability. 
 
+The class RockPaperScissors takes in the input for number of rounds to be played (with a default value of 5), and has 3 atrributes in total "user_wins" which keeps tracks of user's win score, and similaryly "computer_wins" for computer's win score along with "rounds". 
+
+The method "get_computer_choice()" selects an option randomly from the list using random.choice(). The "get_prediction()" method uses the webcamera of the system to predict user input through the video feed and assigns the user's choice accordingly. The "get_winner()" method compares both the user's and computer's choice and determines the winner and allocates the score accordingly.
+
+Finally, the function "play_rps()" runs a loop till the number of rounds is met or either the user or computer reaches the required score to win the seires. The "get_computer_choice()" and "get_prediction()" methods are called from the instance of the class RockPaperScissors and are then compared through the "get_winner()" method. A score is completed from proceeding to the next round. 
+
+## Further improvements
+The next improvement for this project would be to have a continuously running game screen using the web camera which takes in the input from the user and displays each round result and the final winner result on the screen.
 
