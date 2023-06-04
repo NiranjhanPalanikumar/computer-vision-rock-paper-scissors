@@ -1,7 +1,7 @@
-# Computer Vision RPS
+# Computer Vision Rock Paper Scissor Game
 
 ## Description
-Google's Teachable Machines was used to collect the images and train the model. Teachable Machines is Google's online tool for computer vision applications, where you can capture images using a web camera for each class in your use-case. The images are then used to train a model which can recognise the different classes based on confidence percentage.
+Teachable Machines was used to collect the images and train the model. Teachable Machines is Google's online tool for computer vision applications, where you can capture images using a web camera for each class in your use-case. The images are then used to train a model which can recognise the different classes based on confidence percentage.
 
 There are a total of four classes:
 1. Rock
